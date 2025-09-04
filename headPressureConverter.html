@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="./Resources/index.css" type="text/css" rel="stylesheet">
+  <title>Kenric Freiwald, New Product Development Engineer</title>
+</head>
+<header>
+  <a href="./index.html">Home/About</a>
+  <a href="./tools.html">Tools</a>
+  <!-- <a>Projects</a>
+  <a>Papers</a> -->
+</header>
+<body>
+<div class="tools-container">
+  <h2>Head/Pressure Converter</h2>
+
+  <div style="margin-bottom: 20px;">
+    <label for="input">Value to convert:</label>
+    <input type="number" min=0 value=1 id="input">
+    <select name="inputUnits" id="inputUnits">
+        <option value="">Units to convert from</option>
+        <option value="atm">atm</option>
+        <option value="bar">bar</option>
+        <option value="psi">psi</option>
+        <option value="ksi">ksi</option>
+        <option value="Pa">Pa</option>
+        <option value="kPa">kPa</option>
+        <option value="MPa">MPa</option>
+        <option value="ftH20">ftH₂0</option>
+        <option value="mH20">mH₂0</option>
+        <option value="inHg">inHg</option>
+        <option value="kg_cm2">kg/cm²</option>
+        <option value="kg_m2">kg/m²</option>
+        <option value="kg_mm2">kg/mm²</option>
+        <option value="kN_m2">kN/m²</option>
+        <option value="N_m2">N/m²</option>
+    </select>
+  </div>
+
+  <div style="margin-bottom: 20px;">
+    <label for="specificGravity">Specific Gravity:</label>
+    <input type="number" min=0 value=1 id="specificGravity">
+  </div>
+
+  <div style="margin-bottom: 20px;">
+    <label for="outputUnits">Units to convert to:</label>
+    <select name="outputUnits" id="outputUnits">
+        <option value="">Units to convert from</option>
+        <option value="atm">atm</option>
+        <option value="bar">bar</option>
+        <option value="psi">psi</option>
+        <option value="ksi">ksi</option>
+        <option value="Pa">Pa</option>
+        <option value="kPa">kPa</option>
+        <option value="MPa">MPa</option>
+        <option value="ftH20">ftH₂0</option>
+        <option value="mH20">mH₂0</option>
+        <option value="inHg">inHg</option>
+        <option value="kg_cm2">kg/cm²</option>
+        <option value="kg_m2">kg/m²</option>
+        <option value="kg_mm2">kg/mm²</option>
+        <option value="kN_m2">kN/m²</option>
+        <option value="N_m2">N/m²</option>
+    </select>
+  </div>
+
+  <div id="output"></div>
+  <script src="headPressureConverter.js"></script>
+  <output id="result"></output>
+</div>
+</body>
+<footer>
+  <a href="mailto:kof.echo@gmail.com">Email Me!</a>
+</footer>
+</html>
